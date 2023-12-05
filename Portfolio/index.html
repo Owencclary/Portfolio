@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <div class="title">
+                <h1>Owen Clary</h1>
+            </div>
+            <ul id="sidemenu">
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+</div>
+
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="MyPhotos/UnityLogo.png">
+                <div class="layer" id="combatGame">
+                    <h2>2D Combat Game (2023)</h2>
+                    <h4>C# - Unity</h4>
+                    <ul>
+                        <li>• 2D tileset level development</li>
+                        <li>• VFX, animations, inventory UI</li>
+                        <li>• 2D combat</li>
+                        <li>• Scene transition</li>
+                    </ul>
+                    <div>
+                        <a href="https://owenclary.itch.io/2d-combat-game">itch.io Link</a>
+                        <a onclick="showAlert1()">More Info</a>
+                        <script>
+                            function showAlert1() {
+                              alert("My second project in Unity, took the Unity 2D RPG: Complete Combat System course from GameDev.tv on Udemy. Taught me enough skills to be able to start developing a basic video game on my own after completion. This project was focused on implementing animation, 2D tileset level development/animation and VFX.");
+                            }
+                          </script>
+                    </div>
+                </div>
+            </div>
+            <div class="work">
+                <img src="MyPhotos/UnityLogo.png">
+                <div class="layer" id="ballSurvival">
+                    <h2>Ball Survival (2023)</h2>
+                    <h4>C# - Unity</h4>
+                    <ul>
+                        <li>• UI with a shop system</li>
+                        <li>• Enemy wave and spawnpoint system</li>
+                        <li>• Weapon advancements and highscore progression</li>
+                    </ul>
+                    <div>
+                        <a href="https://owenclary.itch.io/ball-survival">itch.io Link</a>
+                        <a onclick="showAlert2()">More Info</a>
+                        <script>
+                            function showAlert2() {
+                              alert("Before starting this project I took the Junior Programmer course from Unity Learn which taught me the basics of Unity. I figured out how to program a clock, random enemy spawn, a wave system, UI, a shop system, a weapon proggresion system, shooting and highscore. I mainly focused on programming with this project and not graphics. This project got me very comfortable with using the Unity Engine.");
+                            }
+                          </script>
+                    </div>
+                </div>
+            </div>
+            <div class="work">
+                <img src="MyPhotos/GitHub2.png">
+                <div class="layer" id="gitHub">
+                    <h2>My Github</h2>
+                    <h4>Javascript - Node.js - HTML - CSS</h4>
+                    <ul>
+                        <li>• Javascript practice problems</li>
+                        <li>• Front end HTML/CSS programming labs</li>
+                        <li>• Backend Javascript/Node programming labs</li>
+                    </ul>
+                    <div>
+                        <a href="https://github.com/Owencclary">GitHub Link</a>
+                        <a onclick="showAlert3()">More Info</a>
+                        <script>
+                            function showAlert3() {
+                              alert("GitHub commits mainly from my programming labs at the DevMountain bootcamp. During DevMountain we spent up to eight hours a day coding, seven days a week. We would start the day with a javascript practice problem, then lecture for several hours and end the day with a pair programming lab. At we the end of the week we would take assessments on the topics covered that week. We have learned Javascript, front end web development with HTML/CSS and back end development with Javascript/Node.js. All commits of practice problems, labs and assessments are found on my GitHub.");
+                            }
+                          </script>
+                    </div>
+                </div>
+            </div>
+            <div class="work">
+                <img src="MyPhotos/TwineLogo.jpg">
+                <div class="layer" id="twine">
+                    <h2>Hobo (2023)</h2>
+                    <h4>Twine</h4>
+                    <ul>
+                        <li>• World building</li>
+                        <li>• Risk vs reward system</li>
+                        <li>• Tense and release / diamond structure progression design</li>
+                    </ul>
+                    <div>
+                        <a href="Work/Hobo.html" download="Work/Hobo.html">Download</a>
+                        <a onclick="showAlert4()">More Info</a>
+                        <script>
+                            function showAlert4() {
+                              alert("Project to demonstrate my game design skills learned at Lake Washington Tech using Twine. This project did not require much programming and was mainly focused on creating the basics of fun gameplay. I demonstrated skills learned like a tense and release diamond structure progression system and a risk vs rewards design. I also really enjoyed the writing the story and the world building of this project.");
+                            }
+                          </script>
+                    </div>
+                </div>
+            </div>
+            <div class="work">
+                <img src="MyPhotos/ART.png">
+                <div class="layer" id="art">
+                    <h2>My Art</h2>
+                    <h4>Adobe Photoshop - Aseprite</h4>
+                    <ul>
+                        <li>• Character pixel art and animation using Aseprite</li>
+                        <li>• Video game concept art using Adobe Photoshop</li>
+                    </ul>
+                    <div>
+                        <a href="art.html">Art Gallery</a>
+                        <a onclick="showAlert5()">More Info</a>
+                        <script>
+                            function showAlert5() {
+                              alert("All through childhood I have always loved artistic hobbies, I took an art class almost every year of middle school and highschool. My hobby for art slowly turned into digital art after highscool where I started using Adobe Photoshop and Aseprite for pixel art and animation. Another artistic interest of mine was in Minecraft. In highschool I liked to develop minecraft server games for people, I gained over 5000+ total players over several servers with very positive feedback.");
+                            }
+                          </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="MyPhotos/Me.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p id="aboutMe">Passionate programmer with interest in game development, game design and web development. Have been programming since middle school. Known for being a quick learner, a team leader, a good communicator and having excellent artistic abilities.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('hobbies')">Hobbies and Interests</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Game Development</span><br>Developing games using Unity (C#) and Unreal Engine (C++).</li>
+                        <li><span>Game Design</span><br>Designing video game concepts and gameplay.</li>
+                        <li><span>Web Development</span><br>Developing Websites using HTML, CSS, Javascript, Node.js.</li>
+                        <li><span>Digital Art</span><br>Creating art using Adobe Photoshop and pixel art using Aseprite.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>Programming at DevMountain bootcamp</li>
+                        <li><span>2023</span><br>Digital Gaming at Lake Washington Institute of Technology</li>
+                        <li><span>2022</span><br>Computer Science at Western Washington University</li>
+                        <li><span>2022</span><br>Woodinville Highschool</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="hobbies">
+                    <ul>
+                        <li><span>Athletics</span><br>My favorite sports are skiing, mountain biking, rock climbing, weight lifting, running, backpacking and mixed martial arts.</li>
+                        <li><span>Programming</span><br>I really enjoy solving programming practice problems, coding video games / websites and creating with game design ideas.</li>
+                        <li><span>Art</span><br>Artistic hobbies of mine include making digital art, playing the acoustic guitar and cooking for my family.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------spacing---------- -->
+<div id="spacing"></div>
+
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> owencclary@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 425-219-9430</p>
+
+                <a href="Resume/Owen Clary's Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Owen Clary 2023<i class="fas fa-heart"></i></p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
