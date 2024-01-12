@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eb6603c43b.js" crossorigin="anonymous"></script>   
+
+    <script src="index.js"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <div class="title">
+                           <ul id="sidemenu">
+                <li><a href="index.html">Back</a></li>
+                <li><a id="weblink" href="https://chillgenda.onrender.com">Website Link</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+                
+            </div>
+
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+</div>
+
+<!-- -----------Chillgenda---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img id="chillgendaSC2" src="Content/ChillgendaSC3.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Chillgenda</h1>
+                <br>
+                <div class="icons">
+                    <i class="fab fa-js fa-2x"></i>
+                    <i class="fab fa-node-js fa-2x"></i>
+                    <i class="fas fa-database fa-2x"></i>
+                    <i class="fab fa-html5 fa-2x"></i>
+                    <i class="fab fa-css3 fa-2x"></i>
+                </div>
+                <p class="aboutMe">Chillgenda was my capstone project during the foundation course at DevMountain. I created this project because I wanted a to-do list software that fits the way I like to use to-do lists. The focus of the website was to be simple and to allow the creation of a routine for each day, week, month, and year. It should also allow adding individual tasks to a large time window.</p>
+                    
+                    <p class="aboutMe"> I programmed this using an SQL database to save each task to the user with the corresponding date and whether it is scheduled to be a routine task or not. The site features a secure login/register form and a task suggestion API. I used a cron clock to update tasks for each time cycle. This project challenged me to figure out how to sort out SQL data with corresponding HTML locations. I am also very proud of the CSS on this site</p>
+                    
+                    <video id="video" width="640" height="360" controls>
+                        <source src="Content/Capstone-Demonstration.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+            </div>
+            
+        </div>
+
+    </div>
+</div>
+
+<!-- -----------spacing---------- -->
+<div id="spacing"></div>
+
+<!-- ----------contact------------- --></body>
+</html>

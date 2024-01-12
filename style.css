@@ -1,0 +1,498 @@
+
+/*------- Whole Page -------*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: rgb(33, 32, 32);
+    color: #fff;
+}
+
+
+/*--------Header--------*/
+
+/* General header */
+#header{
+    width: 100%;
+    height: 11vh;
+    background-color: #262626;
+    background-size: cover;
+    background-position: center;
+    background-position-y: -60px;
+    background-attachment: fixed;
+}
+
+/* General padding */
+.container{
+    padding: 20px 10%;
+}
+
+/* genral nav list */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* nav list format */
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+}
+
+/* nav list words */
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Nav button hover color */
+nav ul li a:hover{
+    width: 100%;
+    color: #7494aa;
+    transition: 0.5s;
+}
+
+/* General name title */
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Name Text */
+.title h1 {
+    color: #fff;
+    font-size: 40px;
+    padding-right: 20px;
+    text-shadow: .5px .5px 5px black;
+}
+
+/* -----------spacing------------- */
+#spacing {
+    width: 100%;
+    height: 20vh;
+    background-image: url(Content/Backbackground.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+/* -----------about--------------- */
+
+.icons i {
+    margin-right: 30px;
+}
+
+.icons {
+    margin-bottom: 30px;
+}
+
+/* General about */
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+
+/* puts items in a row */
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* puts items in a row */
+.about-col-1{
+    flex-basis: 35%;
+}
+
+/* About img */
+.about-col-1 img{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: .5px .5px 10px black;
+}
+
+/* col 2 flex */
+.about-col-2{
+    flex-basis: 60%;
+}
+
+/* all sub titles */
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 15px;
+    text-shadow: 1px 1px 5px black;
+}
+
+/* about me text */
+.aboutMe {
+    font-size: 14px;
+    color: #c9c9c9;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* tab titles */
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+/* tab titles */
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color: #ffffff
+}
+
+/* tab titles blue bar */
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #7494aa;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+/* tab titles blue bar */
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+/* list display */
+.tab-contents ul li{
+    list-style: none;
+    margin: 20px 0;
+    color: #c9c9c9
+}
+
+/* list titles */
+.tab-contents ul li span{
+    color: #7494aa;
+    font-size: 18px;
+}
+
+/* hides non actives lists */
+.tab-contents{
+    display: none;
+}
+
+/* sets display for active list */
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* learn more page */
+
+#video {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    width: 75%;
+    height: 75%;
+}
+
+
+
+/* -------portfolio----------- */
+
+/* General portfolio */
+#portfolio{
+    padding: 60px;
+    padding-bottom: 80px;
+    background-image: url(Content/Backbackground.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-y: -60px;
+    background-attachment: fixed;
+    background: linear-gradient(rgba(11, 11, 11, 0.292),rgba(176, 175, 175, 0.137)), url('Content/Backbackground.jpg') center/cover no-repeat;
+}
+
+/* List of work */
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+/* Individual Projects */
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Prokect images */
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+/* Project text and button layer */
+.layer{
+    width: 100%;
+    height: 0;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+   transition: height 0.5s;
+}
+
+/* Pop up images for each project */
+#chillgenda {
+    background-image: url(Content/ChillgendaSC.png);
+    background-size: 100%;
+}
+
+#unity {
+    background-image: url(Content/2DCombatGameSC.png);
+    background-size: 100%;
+}
+#gitHub {
+    background-image: url(Content/GithHubSC.png);
+    background-size: 100%;
+}
+
+/* pop up button container */
+.layer div {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: -65px;
+}
+
+/* Project description title */
+.layer h2 {
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+/* lanuage headers */
+.layer h4 {
+    font-weight: 500;
+    position: relative;
+}
+
+.pop-up-title {
+    background-color: #7494aa;
+    display: flex;
+    border-radius: 10px;
+    padding: 10px;
+    flex-direction: column;
+    top: -5%;
+}
+
+/* individual pop up buttons */
+.layer a {
+    width: 100px;
+    text-align: center;
+    height: 40px;
+    color: white;
+    border: none;
+    margin: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #7494aa;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 12px;
+}
+
+/* pop up button animations */
+.layer a:hover {
+    transform: scale(1.05);
+}
+
+/* Project image size increase animation */
+.work:hover img{
+    transform: scale(1.1);
+}
+
+/* Fade animation layer */
+.work:hover .layer{
+    height: 100%;
+}
+
+/* Project button hover color*/
+.btn:hover{
+    background: #7494aa;
+}
+
+
+/* ---------contact-------- */
+
+
+/* Contact left contents */
+.contact-left p{
+    margin-top: 55px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+/* Resume button */
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+/* Contact buttons */
+.btn.btn2{
+    display: inline-block;
+    background: #7494aa;
+    border: 0px;
+}
+
+.btn.btn2:hover{
+    transform: scale(1.05);
+}
+
+/* Right contact form */
+.contact-right form{
+    width: 100%;
+}
+
+/* Contact right text area  */
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+/* Submit button */
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* copyright text */
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.contact-row h1 {
+    margin-top: 20px;
+}
+
+
+/* -----------------css for small screens--------- */
+nav .fas{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(images/phone-background.png);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #994D1C;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    
+    .copyright{
+        font-size: 14px;
+    }
+}
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
