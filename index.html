@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ezgHq3iIyU2zA6x5oyvA3t6wCQBR5FjOPMeSf3LAtGVR0XU6JwF5UqAtFfFO9b" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/eb6603c43b.js" crossorigin="anonymous"></script>   
+     <script src="index.js"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <div class="title">
+                <h1>Owen Clary</h1>
+            </div>
+            <ul id="sidemenu">
+                <li><a href="https://github.com/Owencclary">GitHub</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+</div>
+
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Content/JavaScript-logo.png">
+                <div class="layer" id="chillgenda">
+                    <div class="pop-up-title">
+                        <h2>Javascript</h2>
+                        <h4>Fullstack Web Development</h4>
+                    </div>
+                    <a href="chillgenda.html">Learn More</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Content/UnityLogo.png">
+                <div class="layer" id="unity">
+                    <div class="pop-up-title">
+                        <h2>Unity</h2>
+                        <h4>C# / Game Development / Game Design</h4>
+                    </div>
+                        <a href="unity.html">Learn More</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Content/Python.png">
+                <div class="layer" id="gitHub">
+                    <div class="pop-up-title">
+                        <h2>Python</h2>
+                        <h4>Fullstack Web Development / Macheine Learning</h4>
+                    </div>
+                        <a href="python.html">Learn More</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Content/Me.jpg">
+            </div>
+            <div class="about-col-2">
+                <div class="icons">
+                    <i class="fab fa-js fa-2x"></i>
+                    <i class="fab fa-node-js fa-2x"></i>
+                    <i class="fas fa-database fa-2x"></i>
+                    <i class="fab fa-html5 fa-2x"></i>
+                    <i class="fab fa-css3 fa-2x"></i>
+                    <i class="fab fa-python fa-2x"></i>
+                    <i class="fab fa-cuttlefish fa-2x"></i>
+                    </div>
+                <h1 class="sub-title">About Me</h1>
+               <br>
+                <p id="aboutMe">Passionate programmer with an interest in Python, Machine Learning, Web Development, JavaScript, and Game Development. Have been programming for seven years. Known for being a quick learner with a very adventurous spirit. I love programming and working with teams.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('hobbies')">Hobbies and Interests</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python</span><br>Developing software using Python, Tensorflow, SkLearn, Flask, WTForms, SQLAlchemy, HTML/CSS .</li>
+                        <li><span>Javascript</span><br>Developing Websites using HTML/CSS, Javascript, Node.js and SQL.</li>
+                        <li><span>Unity</span><br>Developing and designing games in Unity using C#.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>Programming at DevMountain bootcamp</li>
+                        <li><span>2023</span><br>Digital Gaming at Lake Washington Institute of Technology</li>
+                        <li><span>2022</span><br>Computer Science at Western Washington University</li>
+                        <li><span>2022</span><br>Woodinville Highschool</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="hobbies">
+                    <ul>
+                        <li><span>Athletics</span><br>My favorite sports are skiing, mountain biking, rock climbing, weight lifting, running, and backpacking.</li>
+                        <li><span>Programming</span><br>I really enjoy programming anything, the problem solving and creativity involved makes me so happy.</li>
+                        <li><span>Artistic Hobbies</span><br>Artistic hobbies of mine include making digital art, playing the acoustic guitar and cooking for my family.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------spacing---------- -->
+<div id="spacing"></div>
+
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="contact-row">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="contact-left">
+                <p><i class="fas fa-paper-plane"></i> owencclary@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 425-219-9430</p>
+            </div>
+            <a href="Resume/Owen Clary's Resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Owen Clary 2023</p>
+    </div>
+</div>
+</body>
+</html>
+
+<!-- ----------JS------------- -->
+<script>
+    function opentab(tabName) {
+        // Hide all tab contents
+        var tabContents = document.querySelectorAll('.tab-contents');
+        tabContents.forEach(function (tabContent) {
+            tabContent.style.display = 'none';
+        });
+
+        // Remove active-link class from all tab links
+        var tabLinks = document.querySelectorAll('.tab-links');
+        tabLinks.forEach(function (tabLink) {
+            tabLink.classList.remove('active-link');
+        });
+
+        // Show the selected tab content and mark the corresponding tab link as active
+        var selectedTab = document.getElementById(tabName);
+        selectedTab.style.display = 'block';
+
+        var selectedTabLink = document.querySelector('[onclick="opentab(\'' + tabName + '\')"]');
+        selectedTabLink.classList.add('active-link');
+    }
+</script>
